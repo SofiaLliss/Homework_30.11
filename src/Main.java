@@ -71,7 +71,7 @@ public class Main {
         System.out.println("За трое суток машина произвела " + performanceThirdTime + " штук бутылок.");
         int fourthTime = secondTime * 31;
         int performanceFourthTime = machinePerformance * fourthTime;
-        System.out.println("За месяц машина произвела " + performanceThirdTime + " штук бутылок.");
+        System.out.println("За месяц машина произвела " + performanceFourthTime + " штук бутылок.");
     }
     public static void  task5() {
         System.out.println("Задача №5");
