@@ -20,17 +20,17 @@ public class Main {
         System.out.println(secondVariable);
         short thirdVariable = 32760;
         System.out.println(thirdVariable);
-        long fourthVariable = 922372036;
+        long fourthVariable = 922372036L;
         System.out.println(fourthVariable);
         float fifthVariable = 1.44f;
         System.out.println(fifthVariable);
-        double sixthVariable = 1.5E+308;
+        double sixthVariable = 3.768986434;
         System.out.println(sixthVariable);
     }
 
     public static void task2() {
         System.out.println("Задача №2");
-        double a = 27.12;
+        float a = 27.12F;
         System.out.println(a);
         long b = 987678965549L;
         System.out.println(b);
@@ -69,7 +69,7 @@ public class Main {
         int thirdTime = secondTime * 3;
         int performanceThirdTime = machinePerformance * thirdTime;
         System.out.println("За трое суток машина произвела " + performanceThirdTime + " штук бутылок.");
-        int fourthTime = secondTime * 31;
+        int fourthTime = secondTime * 30;
         int performanceFourthTime = machinePerformance * fourthTime;
         System.out.println("За месяц машина произвела " + performanceFourthTime + " штук бутылок.");
     }
@@ -112,13 +112,13 @@ public class Main {
         System.out.println("Задача №7");
         short desiredWeight = 7000;
         short lostWeightInDay = 250;
-        int numberOfDays = desiredWeight / lostWeightInDay;
-        System.out.println("Если спортсмен тераяет " + lostWeightInDay + " грамм, то ему понадобится " + numberOfDays + " дней. ");
         short lostWeightInDay2 = 500;
-        int numberOfDays2 = desiredWeight / lostWeightInDay2;
+        double numberOfDays = (double) desiredWeight / lostWeightInDay;
+        System.out.println("Если спортсмен тераяет " + lostWeightInDay + " грамм, то ему понадобится " + numberOfDays + " дней. ");
+        double numberOfDays2 = (double) desiredWeight / lostWeightInDay2;
         System.out.println("Если спортсмен тераяет " + lostWeightInDay2 + " грамм, то ему понадобится " + numberOfDays2 + " дней. ");
-        int sumDays = numberOfDays + numberOfDays2;
-        int averageNumberOfDays = sumDays / 2;
+        double lossWeightPerDayAverage = (lostWeightInDay + lostWeightInDay2) / 2D;
+        double averageNumberOfDays = desiredWeight / lossWeightPerDayAverage;
         System.out.println("Среднее количество дней для похудения " + averageNumberOfDays + " день. ");
     }
 
